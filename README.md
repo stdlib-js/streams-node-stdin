@@ -24,30 +24,14 @@ limitations under the License.
 
 > [Standard input][standard-streams].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/streams-node-stdin
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var stdin = require( '@stdlib/streams-node-stdin' );
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
 ```
 
 #### stdin
@@ -57,8 +41,8 @@ var stdin = require( '@stdlib/streams-node-stdin' );
 <!-- run-disable -->
 
 ```javascript
-var string2buffer = require( '@stdlib/buffer-from-string' );
-var Buffer = require( '@stdlib/buffer-ctor' );
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
+import Buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-ctor@esm/index.mjs';
 
 var data = [];
 var len = 0;
@@ -107,10 +91,15 @@ function onEnd() {
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
 var proc = require( 'process' );
-var stdin = require( '@stdlib/streams-node-stdin' );
-var stdout = require( '@stdlib/streams-node-stdout' );
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
+import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@esm/index.mjs';
 
 // Set the encoding:
 stdin.setEncoding( 'utf8' );
@@ -129,6 +118,10 @@ stdin.push( null );
 
 // Ensure the process closes:
 setTimeout( proc.exit, 1000 );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -152,7 +145,7 @@ setTimeout( proc.exit, 1000 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
