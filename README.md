@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.1.0-esm/index.mjs';
 ```
 
 #### stdin
@@ -109,7 +109,7 @@ function onEnd() {
 <script type="module">
 
 var proc = require( 'process' );
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.1.0-esm/index.mjs';
 import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@esm/index.mjs';
 
 // Set the encoding:
