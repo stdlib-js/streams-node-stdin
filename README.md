@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/streams-node-stdin/tags). For example,
+
+```javascript
 import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.1.1-deno/mod.js';
 ```
 
@@ -104,7 +109,7 @@ function onEnd() {
 
 ```javascript
 var proc = require( 'process' );
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.1.1-deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
 import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@deno/mod.js';
 
 // Set the encoding:
