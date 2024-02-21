@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.2.1-deno/mod.js';
 ```
 
 #### stdin
@@ -104,7 +104,7 @@ function onEnd() {
 
 ```javascript
 var proc = require( 'process' );
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@v0.2.1-deno/mod.js';
 import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@deno/mod.js';
 
 // Set the encoding:
